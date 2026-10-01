@@ -1,0 +1,17 @@
+services:
+  hackernews-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      # Override cache TTLs (seconds)
+      # Cache__ListAbsoluteExpirationSeconds: 300
+      # Cache__ItemAbsoluteExpirationSeconds: 1800
+      # Override resilience settings
+      # Resilience__RetryMaxAttempts: 3
+      # Resilience__CircuitBreakerBreakSeconds: 30
+    restart: unless-stopped

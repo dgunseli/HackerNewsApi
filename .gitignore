@@ -1,0 +1,58 @@
+# ── Build output ──────────────────────────────────────────────────────────────
+bin/
+obj/
+out/
+
+# ── Visual Studio ─────────────────────────────────────────────────────────────
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vscode/
+
+# ── Rider ─────────────────────────────────────────────────────────────────────
+.idea/
+*.sln.iml
+
+# ── Test results ──────────────────────────────────────────────────────────────
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# ── NBomber reports (generated to $TMPDIR, but guard against local runs) ──────
+nbomber_reports/
+reports/
+nbomber_default_*/
+nbomber-log-*.txt
+nbomber_report_*.html
+nbomber_report_*.txt
+nbomber_report_*.csv
+nbomber_report_*.md
+
+# ── .NET publish output ───────────────────────────────────────────────────────
+publish/
+*.nupkg
+*.snupkg
+
+# ── Secrets & local config ────────────────────────────────────────────────────
+appsettings.Local.json
+appsettings.Development.json
+*.pfx
+*.p12
+.env
+.env.*
+secrets.json
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
